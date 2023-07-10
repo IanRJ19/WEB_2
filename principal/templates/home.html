@@ -4,9 +4,46 @@
 <head>
     <title>Inicio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados para el diseño femenino */
+        body {
+            background-color: #f8f8f8;
+        }
+        
+        .navbar {
+            background-color: #ffdfec;
+        }
+        
+        .navbar-brand {
+            color: #ff0099;
+            font-weight: bold;
+        }
+        
+        .jumbotron {
+            background-color: #f8f0fb;
+        }
+        
+        .jumbotron h1, .jumbotron p {
+            color: #ff0099;
+        }
+        
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+        
+        .card-title {
+            color: #ff0099;
+            font-weight: bold;
+        }
+        
+        .footer {
+            background-color: #ffdfec;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="{% url 'home' %}">Mi Tienda de Música</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -27,14 +64,14 @@
     </nav>
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-4">Bienvenido a Mi Tienda de Música</h1>
+            <h1 class="display-4">Bienvenida a Mi Tienda de Música</h1>
             <p class="lead">Explora nuestra colección de álbumes y descubre tu próxima canción favorita.</p>
         </div>
     </div>
 
     <!-- Insertar aquí la sección de tarjetas con los álbumes -->
 
-    <footer class="footer mt-auto py-3 bg-light">
+    <footer class="footer mt-auto py-3">
         <div class="container">
             <span class="text-muted">© 2023 Mi Tienda de Música. Todos los derechos reservados.</span>
         </div>
