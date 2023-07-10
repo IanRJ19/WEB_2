@@ -1,33 +1,24 @@
-from django.views.generic import ListView, DetailView
-from .models import Album, Song
-
-class AlbumListView(ListView):
-    model = Album
-    template_name = 'app1/album_list.html' 
-
-class AlbumDetailView(DetailView):
-    model = Album
-    template_name = 'app1/album_detail.html' 
-
-
-from django.views.generic import ListView, DetailView, CreateView
+from django.views.generic import ListView, DetailView, CreateView, TemplateView
 from .models import Album, Song
 from .forms import AlbumForm, SongForm
 
-# Tus vistas anteriores aquí...
+class AlbumListView(ListView):
+    model = Album
+    template_name = 'album_list.html' 
+
+class AlbumDetailView(DetailView):
+    model = Album
+    template_name = 'album_detail.html' 
 
 class AlbumCreateView(CreateView):
     model = Album
     form_class = AlbumForm
-    template_name = 'app1/album_form.html' 
+    template_name = 'album_form.html' 
 
 class SongCreateView(CreateView):
     model = Song
     form_class = SongForm
-    template_name = 'app1/song_form.html'
-
-
-from django.views.generic import TemplateView
+    template_name = 'song_form.html'
 
 class HomeView(TemplateView):
-    template_name = 'principal/home.html'
+    template_name = 'home.html'

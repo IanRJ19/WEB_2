@@ -7,12 +7,31 @@
 </head>
 <body>
     <div class="container">
-        <h1>Nuevo Álbum</h1>
-        <form method="POST" enctype="multipart/form-data">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="btn btn-primary">Guardar</button>
-        </form>
+        <h1 class="mt-4">Nuevo Álbum</h1>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="id_title">Título:</label>
+                        {{ form.title }}
+                    </div>
+                    <div class="form-group">
+                        <label for="id_artist">Artista:</label>
+                        {{ form.artist }}
+                    </div>
+                    <div class="form-group">
+                        <label for="id_genre">Género:</label>
+                        {{ form.genre }}
+                    </div>
+                    <div class="form-group">
+                        <label for="id_cover">Portada del Álbum:</label>
+                        {{ form.cover }}
+                    </div>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
