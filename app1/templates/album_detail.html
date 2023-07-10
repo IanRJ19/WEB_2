@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ album.title }}</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ album.title }}</h1>
+        <img src="{{ album.cover_image.url }}" alt="{{ album.title }}">
+        <h3>Canciones:</h3>
+        <ul>
+            {% for song in album.song_set.all %}
+                <li>{{ song.title }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Albumes de Música</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Albumes</h1>
+        <div class="row">
+            {% for album in album_list %}
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="{{ album.cover_image.url }}" class="card-img-top" alt="{{ album.title }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ album.title }}</h5>
+                            <a href="{% url 'album_detail' album.id %}" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
