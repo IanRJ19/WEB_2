@@ -1,0 +1,102 @@
+body {
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffdfec;
+  padding: 20px 0;
+  color: #ff0099;
+  font-size: 1.2rem;
+}
+
+.navbar-brand {
+  color: #ff0099;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 20px;
+}
+
+.navbar-nav .nav-link {
+  color: #ff0099;
+  text-decoration: none;
+}
+
+.jumbotron {
+  background-color: #f8f0fb;
+  text-align: center;
+  padding: 50px 0;
+  margin-bottom: 50px;
+}
+
+.jumbotron h1 {
+  color: #ff0099;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.jumbotron p {
+  color: #ff0099;
+  font-size: 1.25rem;
+}
+
+.album-card .card {
+  background-color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.album-card .card-img {
+  width: 100%;
+  height: auto;
+  border-bottom: 5px solid #ff0099;
+}
+
+.album-card .card-body {
+  padding: 20px;
+}
+
+.album-card .card-title {
+  color: #ff0099;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.album-card .btn {
+  background-color: #ff0099;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.album-list {
+  margin-bottom: 50px;
+}
+
+.footer {
+  background-color: #ffdfec;
+  padding: 20px 0;
+  color: #ff0099;
+  text-align: center;
+}
