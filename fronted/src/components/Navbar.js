@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./Navbar.css";
 
 function Navbar() {
   return (
@@ -10,19 +10,19 @@ function Navbar() {
         </a>
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" href="/albums">
+            <button className="nav-button" onClick={() => window.location.href='/albums'}>
               Álbumes
-            </a>
+            </button>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/albums/create">
+            <button className="nav-button" onClick={() => window.location.href='/albums/create'}>
               Crear Álbum
-            </a>
+            </button>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/songs/create">
+            <button className="nav-button" onClick={() => window.location.href='/songs/create'}>
               Crear Canción
-            </a>
+            </button>
           </li>
         </ul>
       </div>
